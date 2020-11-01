@@ -21,8 +21,8 @@ else
 	exit 255
 fi
 
-if [ $2 == "base-ml" ]; then
-	docker run --name "$2-container" -v "$3":/workspace/code  -p 127.0.0.1:8080:8080 -it --privileged $2 /bin/bash
+if [ $2 == "base-ml" -o $2 == "nodejs" ]; then
+	docker run --name "$2-container" -v "$3":/workspace -p 127.0.0.1:8080:8080 -it --privileged $2 /bin/bash
 else
 	echo "Image name: $2 not supported"
 fi
