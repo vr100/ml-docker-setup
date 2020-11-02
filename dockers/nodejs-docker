@@ -9,3 +9,4 @@ ENV PYTHONUNBUFFERED=1
 ENV DEBIAN_FRONTEND="noninteractive"
 
 RUN apt-get install -y nodejs npm
+RUN pip3 install pandas
