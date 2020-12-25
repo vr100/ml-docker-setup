@@ -9,3 +9,5 @@ EXPOSE 8080
 WORKDIR /workspace
 ENV PYTHONUNBUFFERED=1
 ENV DEBIAN_FRONTEND="noninteractive"
+
+RUN pip3 install matplotlib pylatexenc
