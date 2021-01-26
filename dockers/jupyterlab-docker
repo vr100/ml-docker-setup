@@ -12,3 +12,4 @@ ENV DEBIAN_FRONTEND="noninteractive"
 
 RUN pip3 install pandas matplotlib sklearn
 RUN pip3 install torch torchvision
+RUN pip3 install hyperopt
