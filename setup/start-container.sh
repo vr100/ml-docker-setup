@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ "$#" -lt 2 ]; then
 	echo "Usage: $0 create|attach|restart image_name <volume_dir>"
 	echo "<volume_dir> is required only for create action"
