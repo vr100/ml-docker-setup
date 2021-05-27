@@ -12,6 +12,8 @@ elif [ $1 == "qiskit" ]; then
 	docker build --tag qiskit -f qiskit-docker .
 elif [ $1 == "ml-learn" ]; then
 	docker build --tag ml-learn -f octave-docker .
+elif [ $1 == "cv" ]; then
+	docker build --tag cv -f cv-docker .
 else
 	echo "Image name: $1 not supported"
 fi
