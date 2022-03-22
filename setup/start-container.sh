@@ -27,7 +27,7 @@ if [ $2 == "nodejs" ]; then
 	ports="$ports -p 127.0.0.1:3030:3030"
 fi
 
-if [ $2 == "base-ml" -o $2 == "nodejs" -o $2 == "qiskit" -o $2 == "ml-learn" -o $2 == "cv"  -o $2 == "waymo"]; then
+if [ $2 == "base-ml" -o $2 == "nodejs" -o $2 == "qiskit" -o $2 == "ml-learn" -o $2 == "cv"  -o $2 == "waymo" ]; then
 	docker run --name "$2-container" -v "$3":/workspace $ports -it --privileged $2 /bin/bash
 else
 	echo "Image name: $2 not supported"
