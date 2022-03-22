@@ -7,6 +7,6 @@ WORKDIR /workspace
 ENV PYTHONUNBUFFERED=1
 ENV DEBIAN_FRONTEND="noninteractive"
 
-python3 -m pip install --upgrade pip
-python3 -m pip install tensorflow==2.6 --user
-python3 -m pip install waymo-open-dataset-tf-2-6-0 --user
+RUN python3 -m pip install --upgrade pip
+RUN python3 -m pip install tensorflow==2.6 --user
+RUN python3 -m pip install waymo-open-dataset-tf-2-6-0 --user
